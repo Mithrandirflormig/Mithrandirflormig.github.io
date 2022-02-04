@@ -16,9 +16,9 @@ minimal_mistakes_skin    : "haxor" # "air", "aqua", "contrast", "dark", "dirt", 
 
 # Site Settings
 locale                   : "en-US"
-title                    : "snowscan.io"
+title                    : "Mario A. Flormig"
 title_separator          : "-"
-name                     : "Snowscan"
+name                     : "Mario A. Flormig"
 description              : "Posts about security, CTFs and networking"
 url                      : "https://snowscan.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
@@ -101,23 +101,23 @@ analytics:
 
 # Site Author
 author:
-  name             : "Snowscan"
+  name             : "Mario A. Flormig"
   avatar           : "/assets/images/avatar.png"
-  bio              : "Pentester, CTF player<br>HackTheBox ATeam"
-  location         : "Canada"
-  email            : "info@snowscan.io"
+  bio              : "Físico, DevOps, Backend"
+  location         : "México"
+  email            : "yondaimeflormig@ciencias.unam.mx"
   uri              :
   home             : # null (default), "absolute or relative url to link to author home"
   bitbucket        :
   codepen          :
   dribbble         :
-  flickr           :
-  facebook         :
+  flickr           : 
+  facebook         : "Yondaim.flormig"
   foursquare       :
-  github           : "slemire"
+  github           : "Mithrandirflormig"
   gitlab           :
   google_plus      :
-  keybase          : "snowscan"
+  keybase          : 
   instagram        :
   lastfm           :
   linkedin         : # "john-doe-12345678" (the last part of your profile url, e.g. https://www.linkedin.com/in/john-doe-12345678)
@@ -126,7 +126,7 @@ author:
   stackoverflow    : # "123456/username" (the last part of your profile url, e.g. https://stackoverflow.com/users/123456/username)
   steam            : # "steamId" (the last part of your profile url, e.g. https://steamcommunity.com/id/steamId/)
   tumblr           :
-  twitter          : "snowscan"
+  twitter          : "MithrandirFlorm"
   vine             :
   weibo            :
   xing             :
