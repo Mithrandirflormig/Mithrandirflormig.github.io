@@ -4,7 +4,7 @@ title: La notación polaca inversa en Python
 date: 2022-02-01
 classes: wide
 header:
-  teaser: /assets/images/png
+  teaser: /assets/images/png/arbol.png
   teaser: /assets/images/svg
 categories:
   - Python
@@ -100,8 +100,7 @@ Hasta este punto, deben notar que la orientación en los ejemplos anteriores es 
 
 Antes de abordar la descomposición hay que tener claro como se efectúan las operaciones aritméticas y la aridad de los operadores o funciones con los que trabajaremos. Veamos la siguiente tabla:
 
-<div id="main-container">
-  <table width = "50%">
+  <table width = "60%" id="tabla">
     <thead>
       <tr>
         <th>Operador/Función</th>
@@ -135,7 +134,6 @@ Antes de abordar la descomposición hay que tener claro como se efectúan las op
       <td>2</td>
     </tr>
   </table>
-</div>
 
 Las operaciones _n-arias_ requieren de _n_ operandos para poder efectuarse, y en esta tabla (aunque posiblemente se nos escapan mas operadores o funciones) pueden observar las operaciones unarias (que requieren de un solo operando) y binarias (que requieren de dos), que son las que se trabajan habitualmente. Si tienen curiosidad sobre como es una operación ternaria, recuerden que en matemáticas tenemos una representación compacta de sumas muy grandes: las [series](https://es.wikipedia.org/wiki/Serie_(matem%C3%A1tica)). Estas se representan mediante el símbolo de la suma _&Sigma;_ (me niego a llamarla "sumatoria"), y que requiere de tres operandos para poder efectuarse; donde comienza la suma, donde termina y el argumento a sumar.
 
