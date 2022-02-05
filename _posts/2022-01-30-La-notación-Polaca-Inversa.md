@@ -14,7 +14,7 @@ tags:
   - RPN
 ---
 
-La notación polaca inversa es uno de los algoritmos mejor desarrollados para el cálculo de operaciones aritméticas a falta de una aplicación simbólica. También se le conoce como la notación sufija, que en contraste con la forma tradicional de operar (forma infija, es decir, el operador en medio de los dos operandos), el operador aparece posterior a los operandos. Conozcamos más acerca de este interesante algoritmo...
+La notación polaca inversa es uno de los algoritmos mejor desarrollados para el cálculo de operaciones aritméticas a falta de una aplicación simbólica. También se le conoce como la notación postfija, que en contraste con la forma tradicional de operar (forma infija, es decir, el operador en medio de los dos operandos), el operador aparece posterior a los operandos. Conozcamos más acerca de este interesante algoritmo...
 
 ### <span style="color:#b2e74c">  Contenido </span>
 
