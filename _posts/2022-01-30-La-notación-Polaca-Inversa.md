@@ -128,12 +128,12 @@ Antes de abordar la descomposición hay que tener claro como se efectúan las op
     <tr>
       <td>sin(n),cos(n),tan(n)</td>
       <td>Unaria</td>
-      <td>2</td>
+      <td>3</td>
     </tr>
     <tr>
       <td>arcsin(n),arccos(n),arctan(n)</td>
       <td>Unaria</td>
-      <td>2</td>
+      <td>3</td>
     </tr>
     </tbody>
   </table>
