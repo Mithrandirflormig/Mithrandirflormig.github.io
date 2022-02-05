@@ -2,11 +2,13 @@
    TABLES
    ========================================================================== */
 
-#tabla {
-  margin: auto;
-}
+.main-container{
+    margin: 0 auto;
+    width: 500px;
+  }
 
 table {
+  margin: auto;
   display: block;
   margin-bottom: 1em;
   width: 100%;
@@ -28,7 +30,7 @@ thead {
 th {
   padding: 0.5em;
   font-weight: bold;
-  text-align: left;
+  text-align: center;
 }
 
 td {
