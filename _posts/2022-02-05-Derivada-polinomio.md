@@ -1,7 +1,7 @@
 ---
 layout: single
 title: Calculando la derivada de un Polinomio de grado n
-date: 2022-02-04
+date: 2022-02-05
 classes: wide
 header:
   teaser: /assets/images/slae32.png
