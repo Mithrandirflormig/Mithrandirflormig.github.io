@@ -33,9 +33,9 @@ De esta manera, si la aridad de un operador es fija, una operación aritmética 
 
 <div class="pngdiv"><img style="border-radius: 30px;" src="/assets/images/png/Notacion_Polaca.png" width = 400 title = "Conexiones entre usuarios" alt = "Grafo en redes sociales"/><p style="color:#b2e74c">Figura 1. Expresión en notación polaca inversa</p></div>
 
-La **Notación Polaca Inversa** (Reverse Polish Notation - RPN) o **notación postfija**, fue propuesta en 1954 en el artículo [_An Analysis of a Logical Machine Using Parenthesis-Free Notation_](https://www.jstor.org/stable/2001990), y como su nombre especifica ahora los operandos anteceden al operador (el caso contrario de lo que se muestra en la imagen anterior). Distintos algoritmos extendieron ambas notaciones a lo largo de los años, teniendo su primera aparición en una calculadora de sobremesa [HP-9100A](http://www.hp.com/hpinfo/abouthp/histnfacts/museum/personalsystems/0021/0021history.html) y posteriormente en calculadoras de bolsillo de la misma compañía. Sin les interesa conocer un poco más de esta aplicación, pueden checar el siguiente [_enlace_](http://www.hp.com/united-states/docs/4AA4-2083ENUS.pdf) que los envía a una explicación clara y concreta sobre el uso en de la notación RPN en su calculadora 12c.
+La **Notación Polaca Inversa** (Reverse Polish Notation - RPN) o **notación postfija**, fue propuesta en 1954 en el artículo [_An Analysis of a Logical Machine Using Parenthesis-Free Notation_](https://www.jstor.org/stable/2001990), y como su nombre especifica ahora los operandos anteceden al operador (el caso contrario de lo que se muestra en la imagen anterior). Distintos algoritmos extendieron ambas notaciones a lo largo de los años, teniendo su primera aparición en una calculadora de sobremesa [HP-9100A](http://www.hp.com/hpinfo/abouthp/histnfacts/museum/personalsystems/0021/0021history.html) y posteriormente en calculadoras de bolsillo de la misma compañía. Si están interesados en conocer un poco más de esta aplicación, pueden checar el siguiente [_enlace_](http://www.hp.com/united-states/docs/4AA4-2083ENUS.pdf) que los envía a una explicación concisa sobre el uso en de la notación RPN en su calculadora 12c.
 
-Esta notación es frecuentemente utilizada en diversos lenguajes de programación que permitan incluir tipos de datos abstractos, ya que en general la forma más sencilla de introducirla y manejarla es mediante el criterio [_LIFO_](https://es.wikipedia.org/wiki/Last_in,_first_out), que optimiza los procesos a la hora de programar. La forma de implementarse puede dar lugar a una serie de ventajas y desventajas como se muestra a continuación:
+Esta notación es frecuentemente utilizada en diversos lenguajes de programación que permitan incluir tipos de datos abstractos, ya que en general, la forma más sencilla de introducirla y manejarla es mediante el criterio [_LIFO_](https://es.wikipedia.org/wiki/Last_in,_first_out), que optimiza los procesos a la hora de programar. La forma de implementarse puede dar lugar a una serie de ventajas y desventajas como se muestra a continuación:
 
 - Ventajas:    
     - El proceso que conlleva la descomposición RPN nos permite tener más control sobre los operadores y operandos.
@@ -53,7 +53,7 @@ Esta notación es frecuentemente utilizada en diversos lenguajes de programació
 <a id="graph"></a>
 ## <span style="color:#b2e74c"> ¿Y la teoría de grafos que tiene que ver?</span>
 
-Abordar la descomposición RPN precisa de conocer algunos conceptos previos involucrados en la [teoría de grafos](https://www.grapheverywhere.com/teoria-de-grafos/). Descomponer una operación aritmética da lugar a un tipo de grafo conocido como **_árbol con raíz dirigido_**. Esto puede sonar un tanto extraño para aquellos que desconozcan la jerga matemática, pero nos daremos cuenta que es más intuitivo de lo que parece.
+Abordar la descomposición RPN precisa de conocer algunos conceptos previos involucrados en la [teoría de grafos](https://www.grapheverywhere.com/teoria-de-grafos/). Descomponer una operación aritmética da lugar a un tipo de grafo conocido como **_árbol con raíz dirigido_**, que al principio puede sonar un tanto extraño para aquellos que desconozcan la jerga matemática, pero nos daremos cuenta que es más intuitivo de lo que parece.
 
 Muchas situaciones en el mundo real pueden describirse convenientemente mediante un diagrama compuesto de un conjunto de puntos, que en algunos casos se unen entre ellos mediante líneas. Un caso sencillo de visualizar es la conectividad que tenemos hoy día mediante las redes sociales (seguro asociarán la siguiente imagen con una red social bastante famosa que hasta hace poco tenía una imagen parecida en su inicio).
 
@@ -63,7 +63,7 @@ El interés en este tipo de diagramas surge en sí dos puntos están conectados 
 
 _Un grafo G es un par ordenado G(V(G), A(G)) que consiste en un conjunto de vértices V(G) y un conjunto A(G) de aristas (ambos disjuntos), con una función de incidencia <img class = "svg" src="/assets/images/svg/psi.svg" alt = "Descomposición mediante la notación polaca" /> que asocia con cada borde de G un par desordenado de vértices (no necesariamente distintos) de G. Entonces, si **a** es una arista (del conjunto A) y **u**,**v** son vértices (del conjunto V), tenemos que: <img class = "svg" src="/assets/images/svg/psi.svg" alt = "Descomposición mediante la notación polaca" />(**a**)={**u**,**v**}, donde **a** une los vértices **u**,**v** y estos fungen como sus extremos._
 
-La definición anterior puede parecer un tanto rebuscada, pero les aseguro que es concisa, y contiene todo lo que necesitamos como punto de partida para construir una teoría al respecto. Entonces, los grafos reciben ese nombre porque pueden representarse gráficamente (¡duh!) y estas representaciones gráficas pueden ayudarnos a entender un montón de propiedades del conjunto. Solo para fijar ideas, supongamos que tenemos al grafo _H_ compuesto de los siguientes conjuntos:
+La definición anterior puede parecer un tanto rebuscada, pero les aseguro que es concisa y contiene todo lo que necesitamos como punto de partida para construir una teoría al respecto. Entonces, los grafos reciben ese nombre porque pueden representarse gráficamente (¡duh!) y estas representaciones gráficas pueden ayudarnos a entender un montón de propiedades del conjunto. Solo para fijar ideas, supongamos que tenemos al grafo _H_ compuesto de los siguientes conjuntos:
 
 - <img src="/assets/images/svg/vh.svg" alt="Conjunto de vertices">
 - <img src="/assets/images/svg/ah.svg" alt="Conjunto de aristas">
@@ -73,11 +73,11 @@ donde las relaciones están dadas según los valores que toma la función de inc
 - <img src="/assets/images/svg/psi1.svg" alt="Función de incidencia 1">
 - <img src="/assets/images/svg/psi2.svg" alt="Función de incidencia 2">
 
-Esas relaciones dan paso a un sin fin de formas que el grafo podría tener, por lo que no existe un camino correcto para determinar su forma. Las posiciones relativas de los vértices y la forma que tienen las aristas generalmente no tienen tanta importancia, por lo que a continuación les muestro una posible forma que convenientemente funciona, donde los vértices son indicados por pequeños círculos, y las líneas que los unen son las aristas.
+Esas relaciones dan paso a un sin fin de formas que el grafo podría tener, por lo que no existe un camino correcto para determinar su forma. Las posiciones relativas de los vértices y la forma que tienen las aristas generalmente no tienen tanta importancia, por lo que a continuación les muestro una posible forma que convenientemente funciona, donde los vértices son indicados por pequeños círculos y las líneas que los unen son las aristas.
 
 <div class = "pngdiv"><img style="border-radius: 30px;" src="/assets/images/png/Grafo_2.png" width = 300 title = "Grafo de seis vértices"/><p style="color:#b2e74c">Figura 3. Posible representación del grafo mediante el conjunto de vértices y aristas</p></div>
 
-Existe una clasificación exhaustiva para cada tipo de grafo, pero no debemos perder de vista que la definición anterior es compartida para cada una de esas clasificaciones, por lo que si se entendió (conceptualmente al menos) lo anterior, abordemos un caso concreto de los grafos; _los árboles_. Un _árbol_ en este contexto, hace referencia a un tipo de grafo acíclico, es decir, un grafo que no contiene ciclos (duh x2), pero podemos encontrar una definición un tanto más precisa al respecto, pensando que para que un grafo pueda conectarse, debe existir al menos una ruta entre dos vértices, de forma que:
+Existe una clasificación exhaustiva para cada tipo de grafo, pero no debemos perder de vista que la definición anterior es compartida para cada una de esas clasificaciones, por lo que si se entendió (conceptualmente al menos) lo anterior, abordemos un caso concreto de los grafos; _los árboles_. Un _árbol_ en este contexto, hace referencia a un tipo de grafo acíclico, es decir, un grafo que no contiene ciclos (duh x2), y podemos encontrar una definición un tanto más precisa al respecto, pensando que para que un grafo pueda conectarse, debe existir al menos una ruta entre dos vértices, de forma que:
 
 - _En un árbol, dos vértices están conectados exactamente por un camino_
 
@@ -336,7 +336,7 @@ Entonces, tendremos las siguientes reglas a seguir:
 4. Si la operación contiene paréntesis, al toparnos con el paréntesis de apertura ("("), lo agregaremos a la pila intermedia. 
 5. Al toparnos con el paréntesis de cierre (")") vaciaremos cada elemento de la pila intermedia a la pila final, y nos detendremos hasta encontrar su correspondiente paréntesis de apertura.
 
-Hagamos ahora una descripción lo mas gráfica posible para entender completamente la situación anteriormente planteada. Comenzamos creando las correspondientes pilas en donde almacenaremos los elementos, como se muestra en la **Figura 17**.
+Hagamos ahora una descripción lo mas gráfica posible para entender completamente la situación anteriormente planteada. Comenzamos creando las correspondientes pilas en donde almacenaremos los elementos, como se muestra en la **Figura 18**.
 
 <div class = "pngdiv"><img style="border-radius: 20px;" src="/assets/images/png/stack1.png" width = 350 title = "Algortimo 1"/><p style="color:#b2e74c">Figura 18. Creación de las pilas.</p></div>
 
@@ -434,7 +434,7 @@ Salida: ["5","4","6","-","+"]
 <h2><span style="color:#b8a9e6"> 3. Evaluación de expresión RPN </span></h2>
 
 La evaluación de la expresión es mucho más sencilla, simplemente hay que recordar el enunciado de la <a href = "#tab2">tabla 2</a> para el caso de la notación polaca inversa, de forma que por cada operador binario que encontremos, este debe estar antecedido por dos operandos. De nueva cuenta haremos uso de las pilas para ir almacenando los elementos que vayamos encontrando. Hagamos el ejemplo anterior y gráficamente mostremos su evaluación.
-Comenzamos iterando la expresión en RPN, y como no topamos con un número lo agregamos a la pila de operaciones:
+Comenzamos iterando la expresión en RPN, de forma que nuestro primer elemento es un número, por tanto, lo agregamos a la pila de operaciones:
 
 <div class = "pngdiv"><img style="border-radius: 20px;" src="/assets/images/png/stack12.png" width = 250 title = "operacion 1"/><p style="color:#b2e74c">Figura 28. Agregamos el número a la pila.</p></div>
 
@@ -446,7 +446,7 @@ Finalmente, nos volvemos a topar con otro operador (suma), por tanto, sacamos a 
 
 <div class = "pngdiv"><img style="border-radius: 20px;" src="/assets/images/png/stack14.png" width = 450 title = "operacion 3"/><p style="color:#b2e74c">Figura 30. Evaluamos la última operación y obtenemos el resultado final.</p></div>
 
-El resultado de la operación es **7** como habíamos visto anteriormente.
+El resultado de la operación es **3** como habíamos visto anteriormente.
 
 La implementación en código debe tener también algunas consideraciones a la hora de programarlo.
 
@@ -513,7 +513,7 @@ Salida = 3
 
 ***
 
-Si han llegado hasta acá ¡ya tienen una forma de implementar su calculadora!. Si desean ver el algortimo en acción un tanto mas robusto y con una interfaz gráfica usando tkinter, les dejo en enlace a mi [repositorio](https://github.com/Mithrandirflormig/Calculadora_Cientifica_Python) para que puedan revisar el programa. Se le agregaron algunas funcionalidades extra, como el calculo de funciones trigonométricas, inversas e hiperbólicas, además de tener las posibilidad de gráficas algunas funciones y darles una animación, en cuyo caso, los parámetros de la animación pueden elegirlos a conveniencia.
+Si han llegado hasta acá ¡ya tienen una forma de implementar su calculadora!. Si desean ver el algortimo en acción un tanto mas robusto y con una interfaz gráfica usando tkinter, les dejo en enlace a mi [repositorio](https://github.com/Mithrandirflormig/Calculadora_Cientifica_Python) para que puedan revisar el programa. Se le agregaron algunas funcionalidades extra, como el calculo de funciones trigonométricas, inversas e hiperbólicas, además de tener las posibilidad de gráficar algunas funciones y darles una animación, en cuyo caso, los parámetros de la animación pueden elegirlos a conveniencia.
 Nos vemos en el siguiente post.
 
 <div class = "pngdiv"><img style="border-radius: 20px;" src="/assets/images/png/programa_calculadora.png" width = 600 title = "Programa Calculadora"/></div>
