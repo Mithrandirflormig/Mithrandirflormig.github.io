@@ -59,7 +59,7 @@ Muchas situaciones en el mundo real pueden describirse convenientemente mediante
 
 <div class = "pngdiv"><img style="border-radius: 30px;" src="/assets/images/png/Grafo.png" width = 400 title = "Conexiones entre usuarios" alt = "Grafo en redes sociales"/><p style="color:#b2e74c">Figura 2. Representación de conexión entre usuarios mediante un grafo</p></div>
 
-El interés en este tipo de diagramas surge en sí dos puntos están conectados (aunque de momento la forma en que estos se conectan es irrelevante), siendo entonces una abstracción matemática de este tipo de situaciones, un grafo. La definición formal es la siguiente:
+El interés en este tipo de diagramas surge en si dos puntos están conectados (aunque de momento la forma en que estos se conectan es irrelevante), siendo entonces una abstracción matemática de este tipo de situaciones, un grafo. La definición formal es la siguiente:
 
 _Un grafo G es un par ordenado G(V(G), A(G)) que consiste en un conjunto de vértices V(G) y un conjunto A(G) de aristas (ambos disjuntos), con una función de incidencia <img class = "svg" src="/assets/images/svg/psi.svg" alt = "Descomposición mediante la notación polaca" /> que asocia con cada borde de G un par desordenado de vértices (no necesariamente distintos) de G. Entonces, si **a** es una arista (del conjunto A) y **u**,**v** son vértices (del conjunto V), tenemos que: <img class = "svg" src="/assets/images/svg/psi.svg" alt = "Descomposición mediante la notación polaca" />(**a**)={**u**,**v**}, donde **a** une los vértices **u**,**v** y estos fungen como sus extremos._
 
@@ -85,7 +85,7 @@ La proposición anterior es lo suficientemente intuitiva como para comprender qu
 
 <div class = "pngdiv"><img style="border-radius: 30px;" src="/assets/images/png/arboles.png" width = 500 title = "Arboles"/><p style="color:#b2e74c">Figura 4. Arboles en distintas configuraciones</p></div>
 
-Si analizan cuidadosamente cada una de las situaciones mostradas en la imagen anterior, notarán que de los vértices utilizados, estos están conectados únicamente por un solo camino. De nueva cuenta, no hay una forma concreta de dibujar todos los posibles árboles que se pueden general a partir de esos vértices, así que pueden dejar volar su imaginación y plantearse múltiples situaciones que satisfagan la proposición anterior. 
+Si analizan cuidadosamente cada una de las situaciones mostradas en la imagen anterior, notarán que de los vértices utilizados, estos están conectados únicamente por un solo camino. De nueva cuenta, no hay una forma concreta de dibujar todos los posibles árboles que se pueden generar a partir de esos vértices, así que pueden dejar volar su imaginación y plantearse múltiples situaciones que satisfagan la proposición anterior. 
 
 Ahora, si ya se tiene claro porque ese grafo es llamado árbol, debemos hablar acerca de otro caso particular de estos árboles (así es, un caso particular dentro de un caso particular); _el árbol con raíz_. En este tipo de árbol, uno de los vértices es **_designado_** como raíz y en este caso las aristas toman una orientación natural _desde_ o _hacia_ la raíz. Veamos el siguiente diagrama:
 
