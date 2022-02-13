@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Un cálculo para el módelo estándar con espín extendido
+title: Un cálculo de conmutadores para el módelo estándar con espín extendido
 date: 2022-02-12
 classes: wide
 header:
