@@ -1,7 +1,7 @@
 ---
 layout: single
 title: Un cálculo para el módelo estándar con espín extendido
-date: 2022-02-01
+date: 2022-02-12
 classes: wide
 header:
   teaser: /assets/images/slae32.png
