@@ -282,7 +282,6 @@ DEPENDENCIES
   jekyll-feed (~> 0.6)
   jekyll-include-cache
   minima (~> 2.0)
-  nokogiri
   tzinfo-data
 
 BUNDLED WITH

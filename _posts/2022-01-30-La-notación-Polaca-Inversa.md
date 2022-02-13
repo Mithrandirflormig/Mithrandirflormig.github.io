@@ -1,7 +1,7 @@
 ---
 layout: single
 title: La notación polaca inversa en Python
-date: 2022-02-01
+date: 2022-01-31
 classes: wide
 header:
   teaser: /assets/images/png/Post_1/arbol.png
@@ -11,10 +11,11 @@ categories:
 tags:
   - Pilas
   - Colas
-  - RPN
+  - Tkinter
+  - Intermedio/Avanzado
 ---
 
-La notación polaca inversa es uno de los algoritmos mejor desarrollados para el cálculo de operaciones aritméticas a falta de una aplicación simbólica. También se le conoce como la notación postfija, que en contraste con la forma tradicional de operar (forma infija, es decir, el operador en medio de los dos operandos), el operador aparece posterior a los operandos. Conozcamos más acerca de este interesante algoritmo...
+La notación polaca inversa es uno de los algoritmos mejor desarrollados para el cálculo de operaciones aritméticas a falta de una aplicación simbólica. También se le conoce como la notación postfija, que en contraste con la forma tradicional de operar (forma infija, es decir, el operador en medio de los dos operandos), el operador aparece posterior a los operandos. El reto del día, es realizar una implementación (gráfica de ser posible) de una calculadora que utilice este algoritmo. El diseño de la calculadora es opcional y pueden utilizar las herramientas que consideren pertinentes, pero del algoritmo nos encargaremos en este post, así que vamos allá...
 
 ### <span style="color:#b2e74c">  Contenido </span>
 
