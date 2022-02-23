@@ -34,7 +34,7 @@ De esta manera, si la aridad de un operador es fija, una operación aritmética 
 
 <div class="pngdiv"><img style="border-radius: 30px;" src="/assets/images/png/Post_1/Notacion_Polaca.png" width = 400 title = "Conexiones entre usuarios" alt = "Grafo en redes sociales"/><p style="color:#b2e74c">Figura 1. Expresión en notación polaca inversa</p></div>
 
-La **Notación Polaca Inversa** (Reverse Polish Notation - RPN) o **notación postfija**, fue propuesta en 1954 en el artículo [_An Analysis of a Logical Machine Using Parenthesis-Free Notation_](https://www.jstor.org/stable/2001990), y como su nombre especifica ahora los operandos anteceden al operador (el caso contrario de lo que se muestra en la imagen anterior). Distintos algoritmos extendieron ambas notaciones a lo largo de los años, teniendo su primera aparición en una calculadora de sobremesa [HP-9100A](http://www.hp.com/hpinfo/abouthp/histnfacts/museum/personalsystems/0021/0021history.html) y posteriormente en calculadoras de bolsillo de la misma compañía. Si están interesados en conocer un poco más de esta aplicación, pueden checar el siguiente [_enlace_](http://www.hp.com/united-states/docs/4AA4-2083ENUS.pdf) que los envía a una explicación concisa sobre el uso en de la notación RPN en su calculadora 12c.
+La **Notación Polaca Inversa** (Reverse Polish Notation - RPN) o **notación postfija**, fue propuesta en 1954 en el artículo [_An Analysis of a Logical Machine Using Parenthesis-Free Notation_](https://www.jstor.org/stable/2001990), y como su nombre especifica ahora los operandos anteceden al operador (el caso contrario de lo que se muestra en la imagen anterior). Distintos algoritmos extendieron ambas notaciones a lo largo de los años, teniendo su primera aparición en una calculadora de sobremesa [HP-9100A](http://www.hp.com/hpinfo/abouthp/histnfacts/museum/personalsystems/0021/0021history.html) y posteriormente en calculadoras de bolsillo de la misma compañía. Si están interesados en conocer un poco más de esta aplicación, pueden checar el siguiente [_enlace_](http://www.hp.com/united-states/docs/4AA4-2083ENUS.pdf) que los envía a una explicación concisa sobre el uso de la notación RPN en su calculadora 12c.
 
 Esta notación es frecuentemente utilizada en diversos lenguajes de programación que permitan incluir tipos de datos abstractos, ya que en general, la forma más sencilla de introducirla y manejarla es mediante el criterio [_LIFO_](https://es.wikipedia.org/wiki/Last_in,_first_out), que optimiza los procesos a la hora de programar. La forma de implementarse puede dar lugar a una serie de ventajas y desventajas como se muestra a continuación:
 
@@ -47,7 +47,7 @@ Esta notación es frecuentemente utilizada en diversos lenguajes de programació
 
 - Desventajas
     - Abordar la implementación por primera vez no es algo sencillo, ya que se requiere cierta practica para comprender a detalle la estructura. 
-    - Posterior a la llegada de la [_notación algebraica_](https://es.wikipedia.org/wiki/Orden_de_evaluaci%C3%B3n), la notación polaca inversa fue siendo desestimada en cuanto aplicaciones se refiere.
+    - Posterior a la llegada de la [_notación algebraica_](https://es.wikipedia.org/wiki/Orden_de_evaluaci%C3%B3n), la notación polaca inversa fue desestimada en cuanto aplicaciones se refiere.
 
 ***
 
